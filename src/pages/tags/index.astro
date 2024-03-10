@@ -5,15 +5,19 @@ const tags = [...new Set(allPosts.map((post) => post.frontmatter.tags).flat())];
 ---
 
 <BaseLayout pageTitle="Tags">
-  <h2>List of tags</h2>
+  <div class="space-y-4">
+    <h2>List of tags</h2>
 
-  <div class="tags">
-    {
-      tags.map((tag) => (
-        <p class="tag">
-          <a href={`/tags/${tag}`}>{tag}</a>
-        </p>
-      ))
-    }
+    <ul class="space-y-4">
+      {
+        tags.map((tag) => (
+          <li>
+            <a class="font-bold text-blue-700 hover:text-blue-600" href={tag}>
+              {tag}
+            </a>
+          </li>
+        ))
+      }
+    </ul>
   </div>
 </BaseLayout>

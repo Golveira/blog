@@ -1,7 +1,11 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import Greetings from "../components/Greetings.astro";
 ---
 
 <BaseLayout pageTitle="Home">
-  <h2>Welcome to my site</h2>
+  <div class="space-y-4">
+    <img src="./images/bg.jpg" alt="bg" />
+    <Greetings messages={["Hej", "Hallo", "Hola", "Habari"]} />
+  </div>
 </BaseLayout>

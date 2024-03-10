@@ -1,17 +1,17 @@
----
-import Social from "./Social.astro";
----
-
-<style>
-  footer {
-    display: flex;
-    gap: 1rem;
-    margin-top: 2rem;
-  }
-</style>
-
 <footer>
-  <Social platform="Github" username="@golveira" />
-  <Social platform="Twitter" username="@golveira" />
-  <Social platform="Facebook" username="@golveira" />
+  <div class="max-w-screen-lg mx-auto px-3 md:px-0">
+    <ul class="flex items-center justify-center gap-6">
+      <li>
+        <a class="hover:text-blue-700" href="#">Github</a>
+      </li>
+
+      <li>
+        <a class="hover:text-blue-700" href="#">Twitter</a>
+      </li>
+
+      <li>
+        <a class="hover:text-blue-700" href="#">Linkedin</a>
+      </li>
+    </ul>
+  </div>
 </footer>
